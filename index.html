@@ -1,73 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blessing Exchange Dapp</title>
+    <title>Blessing - Social, Tecnología, Comunidad</title>
+    <link rel="icon" type="image/png" href="./Blessing.png" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: '#0f172a',
-              secondary: '#1e293b',
-              accent: '#3b82f6',
-              success: '#10b981',
-              danger: '#ef4444',
-              gold: '#eab308'
-            }
-          }
-        }
-      }
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
       body {
-        background-color: #0f172a;
-        color: #e2e8f0;
-        font-family: 'Inter', sans-serif;
+        font-family: 'Outfit', sans-serif;
       }
-      /* Custom scrollbar for tables */
+      /* Custom scrollbar for a modern look */
       ::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
+        width: 10px;
       }
       ::-webkit-scrollbar-track {
-        background: #1e293b;
+        background: #0f172a;
       }
       ::-webkit-scrollbar-thumb {
-        background: #475569;
-        border-radius: 4px;
+        background: #3b82f6;
+        border-radius: 5px;
       }
       ::-webkit-scrollbar-thumb:hover {
-        background: #64748b;
-      }
-      .apexcharts-tooltip {
-        background: #1e293b !important;
-        border-color: #334155 !important;
-        color: #fff;
-      }
-      .apexcharts-tooltip-title {
-        background: #0f172a !important;
-        border-bottom: 1px solid #334155 !important;
+        background: #2563eb;
       }
     </style>
   <script type="importmap">
 {
   "imports": {
-    "react-dom/": "https://esm.sh/react-dom@^18.2.0/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.263.1",
-    "react/": "https://esm.sh/react@^18.2.0/",
-    "react": "https://esm.sh/react@^18.2.0",
-    "ethers": "https://esm.sh/ethers@5.7.2",
-    "apexcharts": "https://esm.sh/apexcharts@3.41.0",
-    "react-apexcharts": "https://esm.sh/react-apexcharts@1.4.1"
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
   }
 }
 </script>
 <link rel="stylesheet" href="/index.css">
 </head>
-  <body>
+  <body class="bg-gray-900 text-white overflow-x-hidden">
     <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
